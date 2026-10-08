@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <radialGradient id="lens" cx="0.35" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#bae6fd"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Full-bleed фон — работает и как maskable -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- Контент в safe-zone (60% канваса) -->
+  <g transform="translate(256 256)">
+    <!-- Папка -->
+    <path d="M -110 -30 L -110 -75 Q -110 -95 -90 -95 L -30 -95 L -10 -75 L 90 -75 Q 110 -75 110 -55 L 110 75 Q 110 95 90 95 L -90 95 Q -110 95 -110 75 Z"
+          fill="#ffffff"/>
+    <!-- Объектив камеры -->
+    <circle cx="0" cy="15" r="42" fill="url(#lens)"/>
+    <circle cx="0" cy="15" r="26" fill="#0f172a"/>
+    <circle cx="0" cy="15" r="14" fill="#38bdf8"/>
+    <circle cx="-9" cy="4" r="5" fill="#ffffff" opacity="0.9"/>
+  </g>
+</svg>
